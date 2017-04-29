@@ -20,6 +20,7 @@ before_install:
   - go get -u github.com/elazarl/go-bindata-assetfs/...
   - npm install cross-env
   - go generate ./web ./...
+  - ls -la
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
